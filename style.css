@@ -1,42 +1,333 @@
+/*----------------FONTS------------------*/
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 400;
+	src: url("./assets/fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 500;
+	src: url("./assets/fonts/Montserrat/Montserrat-Medium.ttf");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-weight: 600;
+	src: url("./assets/fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
+
 /*----------------RESET-------------------*/
 *,
 *::before,
 *::after {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
 }
+
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
+
 ul,
 ol,
 li {
-    list-style: none;
+	list-style: none;
 }
+
 img {
-    vertical-align: top;
+	vertical-align: top;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-weight: inherit;
-    font-size: inherit;
+	font-weight: bold;
 }
+
 html,
 body {
-    height: 100%;
-    line-height: 1;
-    font-size: 14 px;
-    color: #252b42;
-    font-family: Montserrat; 
-    font-weight: 500;
+	height: 100%;
+	line-height: 1;
+	font-size: 16px;
+	color: #0d1b2a;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	scroll-behavior: smooth;
 }
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+/*--------------------ICON----------------------*/
+
+.icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-position: center;
+	background-size: cover;
+}
+
+.icon-home {
+	background-image: url(./assets/img/icon-home.svg);
+}
+
+.icon-about {
+	background-image: url(./assets/img/icon-about.svg);
+}
+
+.icon-code {
+	background-image: url(./assets/img/icon-code.svg);
+}
+
+.icon-contact {
+	background-image: url(./assets/img/icon-contact.svg);
+}
+
+.icon-portfolio {
+	background-image: url(./assets/img/icon-portfolio.svg);
+}
+
+.icon-html {
+	background-image: url(./assets/img/icon-html.svg);
+}
+
+.icon-css {
+	background-image: url(./assets/img/icon-css.svg);
+}
+
+.icon-javascript {
+	background-image: url(./assets/img/icon-javascript.svg);
+}
+
+.icon-git {
+	background-image: url(./assets/img/icon-git.svg);
+}
+
+.icon-eng {
+	background-image: url(./assets/img/icon-eng.svg);
+}
+
+.icon-kr {
+	background-image: url(./assets/img/icon-kr.svg);
+}
+
+/*--------------------ICON----------------------*/
+
+
+/*--------------------GENERAL----------------------*/
+main {
+	background: hsla(141, 54%, 86%, 1);
+	background: linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+	background: -moz-linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+	background: -webkit-linear-gradient(90deg, hsla(141, 54%, 86%, 1) 0%, hsla(333, 73%, 85%, 1) 50%, hsla(211, 58%, 79%, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#CAEFD7", endColorstr="#F5BFD7", GradientType=1);
+	padding: 30px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 0.33fr 1fr;
+	min-height: 100vh;
+	overflow: hidden;
+	background: rgba(255, 255, 255, .3);
+	border-radius: 25px;
+	overflow: hidden;
+	border: 1px solid #FFF;
+}
+
+.aside {
+	padding: 40px 20px;
+	width: 100%;
+	border-right: 1px solid #FFF;
+}
+
+.aside-profile {
+	text-align: center;
+}
+
+.aside-profile_avatar {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+}
+
+.aside-profile_name {
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: #0d1b2a;
+}
+
+.aside-profile_profession {
+	color: #415a77;
+}
+
+.aside-nav_list {
+	margin-top: 30px;
+}
+
+.nav-list_item {
+	cursor: pointer;
+	transition: .4s background, .4s opacity;
+}
+
+.nav-list_item:hover {
+	opacity: .7;
+}
+
+.nav-list_item--link.active {
+	background: #FFF;
+	border-radius: 8px;
+}
+
+.nav-list_item--link.active a {
+	color: #0d1b2a;
+}
+
+.nav-list_item a {
+	padding: 10px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	grid-gap: 10px;
+	color: #415a77;
+	transition: .4s color;
+}
+
+.nav-list_item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+
+.section-title {
+	font-weight: 500;
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+.section {
+	margin-top: 35px;
+}
+
+.link {
+	color: #415a77;
+	transition: color .4s linear;
+	cursor: pointer;
+}
+
+.link:hover {
+	color: #1f6feb;
+}
+
 /*----------------HEADER-----------------*/
+.header {
+	margin-bottom: 15px;
+}
+
+.nav {
+	width: 100%;
+	padding: 15px 60px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.nav-item a {
+	padding: 5px 10px;
+	margin: 0 10px;
+	white-space: nowrap;
+}
+
+.nav-item a:hover {
+	color: #1f6feb;
+}
+
+.nav-list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*--------------------CONTACTS----------------------*/
+.contacts {
+	margin-top: 10px;
+}
+
+.contact-item {
+	width: 100%;
+	display: flex;
+	align-items: left;
+}
+
+.contact-item:not(:last-child) {
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.contact-item {
+	display: flex;
+}
+
+.contact-icon {
+	background-position: center left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+}
+
+.contact-icon__github {
+	background-image: url(./assets/svg/github.svg);
+}
+
+.contact-icon__telegram {
+	background-image: url(./assets/svg/telegram.svg);
+}
+
+.contact-icon__discord {
+	background-image: url(./assets/svg/discord.svg);
+}
+
+/*--------------------SKILLS-----------------------*/
+.dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: #E1E1E1;
+	border-radius: 50%;
+	margin-left: 4px;
+}
+
+.dot.active {
+	background-color: #1f6feb;
+}
+
+.skills-list {
+	display: flex;
+	margin-bottom: 20px;
+	justify-content: space-between;
+	padding-right: 55px;
+}
+
+/*--------------------LANGUAGES---------------------*/
+.languages-item:not(:last-child) {
+	margin-bottom: 15px;
+}
 
 /*----------------MAIN-------------------*/
 
