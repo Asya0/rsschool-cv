@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cv</title>
+    <title>CV</title>
     <link rel="icon" href="./assets/icons/favicon.ico">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -17,7 +17,8 @@
                 <aside class="aside">
                     <div class="aside-profile">
                         <picture>
-                            <img class="aside-profile_avatar" src="./profile-photo.jpg" alt="Hannah Gerasimenko">
+                            <img class="aside-profile_avatar" src="./assets/img/profile-photo.jpg"
+                                alt="Hannah Gerasimenko">
                         </picture>
                         <div class="aside-profile_name">Hannah Gerasimenko</div>
                         <div class="aside-profile_profession">Web Developer</div>
@@ -45,22 +46,139 @@
                                     <span class="icon icon-portfolio"></span> Projects
                                 </a>
                             </li>
-                            <li class="nav-list_item">
-                                <a href="#" class="nav-list_item--link js-nav-item" data-page-path="contacts">
-                                    <span class="icon icon-contact"></span> Contacts
-                                </a>
-                            </li>
                         </ul>
                     </nav>
+                    <div class="aside-contacts">
+                        <ul class="contact-list">
+                            <li class="contact-item">
+                                <a href="https://github.com/Asya0" title="Asya0" class="link" target="_blank">
+                                    <div class="contact-icon contact-icon__github"></div>
+                                </a>
+
+                            </li>
+                            <li class="contact-item">
+                                <a href="https://t.me/grsmnk_a" title="@grsmnk_a" class="link" target="_blank">
+                                    <div class="contact-icon contact-icon__telegram"></div>
+                                </a>
+                            </li>
+                            <li class="contact-item">
+                                <a href="https://discordapp.com/users/695671277838663739/" title="onsatori#4672"
+                                    target="_blank" class="link">
+                                    <div class="contact-icon contact-icon__discord"></div>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
                 </aside>
 
                 <div class="main">
-
+                    <header class="header">
+                        <div class="main-content_greetings">
+                            <img class="icon icon-hello" src="./assets/img/icon-hello.png"
+                                srcset="./assets/img/icon-hello.png 2x" alt="hello!"> <span
+                                class="uppercase">hello!</span>
+                        </div>
+                    </header>
+                    <div class="main-content">
+                        <div class="main-content_page active" data-page-target="home">
+                            <h1 class="main-title">I'm Hannah.</h1>
+                            <p class="main-text">I am Hannah Gerasimenko, frontend developer from Russia, Omsk.
+                                Currently
+                                I'm learning
+                                JavaScript and HTML5 with CSS3. I'm 24 years old and love to study, travel and make a
+                                photo.
+                            </p>
+                            <!-- <div class="main-buttons">
+                                <a href="#" class="button button-primary">Button 1</a>
+                                <a href="#" class="link">Button 2</a>
+                            </div> -->
+                        </div>
+                        <div class="main-content_page" data-page-target="about">
+                            <h2 class="main-title">About me</h2>
+                            <p class="main-text">I'm a fourth-year student of OmSTU. I'm constantly learning and
+                                discovering new things. My goal is to learn the frontend so I can create amazing
+                                projects. The priority is to study at rs school, completing all stages, from stage 0 to
+                                2
+                            </p>
+                            <div class="main-row main-row_about">
+                                <div class="main-col">
+                                    <h3>Skills</h3>
+                                    <ul class="tag-list">
+                                        <li class="tag-list_item"><span class="icon icon-html"></span> html5</li>
+                                        <li class="tag-list_item"><span class="icon icon-css"></span> css3</li>
+                                        <li class="tag-list_item"><span class="icon icon-javascript"></span> js</li>
+                                        <li class="tag-list_item"><span class="icon icon-git"></span> git</li>
+                                    </ul>
+                                </div>
+                                <div class="main-col">
+                                    <h3>Languages</h3>
+                                    <ul class="tag-list">
+                                        <li class="tag-list_item"><span class="icon icon-eng"></span> English (A2)
+                                        </li>
+                                        <li class="tag-list_item"><span class="icon icon-kr"></span> Korean (A2)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-content_page" data-page-target="code">
+                            <h2 class="main-title">Code Example</h2>
+                            <pre class="prettyprint code">
+(function () {
+    const scrollItem = document.querySelector('.scroll-top');
+    window.onscroll = () => {
+        if (window.pageYOffset > 800) {
+            scrollItem.style.display = "flex";
+        } else {
+            scrollItem.style.display = "none";
+        }
+    };
+}());
+                            </pre>
+                        </div>
+                        <div class="main-content_page" data-page-target="projects">
+                            <h2 class="main-title">Projects</h2>
+                            <div class="projects-list">
+                                <figure class="projects_info">
+                                    <a href="https://github.com/Asya0/rsschool-cv/tree/rsschool-cv-html"
+                                        target="_blank">
+                                        <img class="projects_image" src="./assets/img/cv-project.png" alt="CV">
+                                    </a>
+                                    <figcaption class="projects_desc">CV</figcaption>
+                                </figure>
+                                <figure class="projects_info">
+                                    <a href="https://github.com/Asya0/purrweb-internship" target="_blank">
+                                        <img class="projects_image" src="./assets/img/horizontal-slider.png"
+                                            alt="horizontal slider">
+                                    </a>
+                                    <figcaption class="projects_desc">Horizontal slider</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="footer">
+                        <ul class="footer-info">
+                            <li class="nav-list_item footer-list_item">
+                                <a class="footer-list_item--link" href="https://github.com/asya0" target="_blank"><img
+                                        src="./assets/icons/aside-icon-github.svg" alt="Github"></a>
+                            </li>
+                            <li class="footer-info_item body-font">2022</li>
+                            <li class="nav-list_item footer-list_item">
+                                <a class="footer-list_item--link" href="https://rs.school/js/" target="_blank">
+                                    <img src="./assets/img/rs_school.svg" alt="Rolling scopes icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </footer>
                 </div>
             </div>
         </div>
+
+
     </main>
-    <footer class="footer"></footer>
+    <script src="./assets/js/prettify.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
