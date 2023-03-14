@@ -3,7 +3,7 @@
 ### Contact information:
 
 **Phone:** + 913 654 2806
-**E-mail:** <anya.gerasimenko763@gmail.com>
+**E-mail:** &lt;anya.gerasimenko763@gmail.com&gt;
 **Discord:** Onsatori(@Asya0)
 **Telegram:** @grsmnk_a
 
