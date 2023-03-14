@@ -44,7 +44,8 @@ This function scrolls the page to the top of the site.
 
 ### Courses:
 
-* RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+* RS Schools Course «JavaScript/Front-end. Stage 0» [RS Schools certificate](https://app.rs.school/certificate/cdh6n4sm)
+* RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)
 * HTML and CSS on the [HTML Academy](https://htmlacademy.ru/study)
 
 ### Languages:
