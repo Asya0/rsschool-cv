@@ -3,7 +3,7 @@
 ### Contact information:
 
 **Phone:** + 913 654 2806
-**E-mail:** <anya.gerasimenko763@gmail.com>
+**E-mail:** &lt;anya.gerasimenko763@gmail.com&gt;
 **Discord:** Onsatori(@Asya0)
 **Telegram:** @grsmnk_a
 
@@ -44,7 +44,8 @@ This function scrolls the page to the top of the site.
 
 ### Courses:
 
-* RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+* RS Schools Course «JavaScript/Front-end. Stage 0» [RS Schools certificate](https://app.rs.school/certificate/cdh6n4sm)
+* RS Schools Course «JavaScript/Front-end. Stage 1» (in progress)
 * HTML and CSS on the [HTML Academy](https://htmlacademy.ru/study)
 
 ### Languages:
